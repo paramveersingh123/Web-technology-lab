@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admission - College Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+    <div class="college-header">
+
+        <img src="images/logo.jpg" alt="GCET Jammu Logo">
+
+        <div class="college-text">
+
+            <h1>GCET JAMMU</h1>
+
+            <p>Education | Knowledge | Success</p>
+
+        </div>
+
+    </div>
+
+</header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="students.html">Students</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="admission.html">Admission</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <h2>Admission Form</h2>
+
+    <form action="submit.html">
+
+        <label>Name:</label>
+        <input type="text" name="name" required>
+
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <br><br>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob">
+
+        <br><br>
+
+        <label>Mobile Number:</label>
+        <input type="tel" name="mobile">
+
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Others
+
+        <br><br>
+
+        <label>Course:</label>
+        <select name="course">
+            <option>Civil Engineering</option>
+            <option>Computer Science Engineering</option>
+            <option>Electronics & Communication Engineering</option>
+            <option>Mechanical Engineering</option>
+            <option>Electrical Engineering</option>
+        </select>
+
+        <br><br>
+
+        <label>Hobbies:</label>
+        <input type="checkbox" name="hobby"> Reading
+        <input type="checkbox" name="hobby"> Sports
+        <input type="checkbox" name="hobby"> Music
+
+        <br><br>
+
+        <label>Address:</label>
+        <br>
+        <textarea name="address" rows="5" cols="40"></textarea>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+    <footer>
+        © 2025 GCET JAMMU. All Rights Reserved.
+    </footer>
+
+</body>
+
+</html>
