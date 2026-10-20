@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ShopEase - Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Our Products</h1>
+        <p>Choose what you like</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <span>Cart: <span id="cart-count">0</span></span>
+    </nav>
+
+    <section>
+        <h2>Product List</h2>
+        <input type="text" id="search" placeholder="Search products...">
+
+        <div class="categories">
+            <button class="filter" data-category="All">All</button>
+            <button class="filter" data-category="Electronics">Electronics</button>
+            <button class="filter" data-category="Clothing">Clothing</button>
+            <button class="filter" data-category="Accessories">Accessories</button>
+        </div>
+
+        <p id="cart-message"></p>
+        <button id="clear-cart">Clear Cart</button>
+
+        <div class="products">
+            <div class="product" data-category="Electronics">
+                <img src="images/image4.jpg" alt="Headphones">
+                <h3>Headphones</h3><p>Price: ₹1,499</p><p>Comfortable sound for everyday use.</p>
+                <button class="details" data-name="Headphones" data-price="₹1,499" data-description="Comfortable sound for everyday use.">View Details</button>
+                <button class="add-cart" data-name="Headphones">Add to Cart</button>
+            </div>
+            <div class="product" data-category="Electronics">
+                <img src="images/image3.jpg" alt="Earphones">
+                <h3>Earphones</h3><p>Price: ₹799</p><p>Small and easy to carry.</p>
+                <button class="details" data-name="Earphones" data-price="₹799" data-description="Small and easy to carry.">View Details</button>
+                <button class="add-cart" data-name="Earphones">Add to Cart</button>
+            </div>
+            <div class="product" data-category="Electronics">
+                <img src="images/image5.jpg" alt="Watch">
+                <h3>Watch</h3><p>Price: ₹999</p><p>A simple everyday watch.</p>
+                <button class="details" data-name="Watch" data-price="₹999" data-description="A simple everyday watch.">View Details</button>
+                <button class="add-cart" data-name="Watch">Add to Cart</button>
+            </div>
+            <div class="product" data-category="Clothing">
+                <img src="images/image7.jpg" alt="T-shirt">
+                <h3>T-Shirt</h3><p>Price: ₹599</p><p>A comfortable cotton T-shirt.</p>
+                <button class="details" data-name="T-Shirt" data-price="₹599" data-description="A comfortable cotton T-shirt.">View Details</button>
+                <button class="add-cart" data-name="T-Shirt">Add to Cart</button>
+            </div>
+            <div class="product" data-category="Clothing">
+                <img src="images/image1.avif" alt="Shoes">
+                <h3>Shoes</h3><p>Price: ₹2,499</p><p>Everyday casual shoes.</p>
+                <button class="details" data-name="Shoes" data-price="₹2,499" data-description="Everyday casual shoes.">View Details</button>
+                <button class="add-cart" data-name="Shoes">Add to Cart</button>
+            </div>
+            <div class="product" data-category="Accessories">
+                <img src="images/image2.jpg" alt="Camera">
+                <h3>Camera</h3><p>Price: ₹4,999</p><p>Capture your favourite moments.</p>
+                <button class="details" data-name="Camera" data-price="₹4,999" data-description="Capture your favourite moments.">View Details</button>
+                <button class="add-cart" data-name="Camera">Add to Cart</button>
+            </div>
+            <div class="product" data-category="Accessories">
+                <img src="images/image8.jpg" alt="Sunglasses">
+                <h3>Sunglasses</h3><p>Price: ₹699</p><p>Simple and stylish sunglasses.</p>
+                <button class="details" data-name="Sunglasses" data-price="₹699" data-description="Simple and stylish sunglasses.">View Details</button>
+                <button class="add-cart" data-name="Sunglasses">Add to Cart</button>
+            </div>
+            <div class="product" data-category="Accessories">
+                <img src="images/image6.jpg" alt="Handbag">
+                <h3>Handbag</h3><p>Price: ₹1,299</p><p>A useful bag for daily needs.</p>
+                <button class="details" data-name="Handbag" data-price="₹1,299" data-description="A useful bag for daily needs.">View Details</button>
+                <button class="add-cart" data-name="Handbag">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer><p>© 2026 ShopEase</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>

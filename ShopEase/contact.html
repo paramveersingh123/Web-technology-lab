@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ShopEase - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <p>We would be happy to hear from you</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <span>Cart: <span id="cart-count">0</span></span>
+    </nav>
+
+    <section>
+        <h2>Send an Enquiry</h2>
+        <form id="contact-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+        <p id="form-message"></p>
+
+        <h2>Our Contact Details</h2>
+        <p>Address: ShopEase, Jammu, India</p>
+        <p>Email: support@shopease.example</p>
+        <p>Phone: 00000 00000</p>
+    </section>
+
+    <footer><p>© 2026 ShopEase</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
