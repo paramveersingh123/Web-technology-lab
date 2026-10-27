@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ShopEase - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <p>We would be happy to hear from you</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <button id="themeToggle" type="button">Dark Mode</button>
+        <button id="cartOpen" type="button">Cart (<span id="cart-count">0</span>)</button>
+    </nav>
+
+    <section>
+        <h2>Send an Enquiry</h2>
+        <form id="contact-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+        <p id="form-message"></p>
+
+        <h2>Our Contact Details</h2>
+        <p>Address: ShopEase, Jammu, India</p>
+        <p>Email: support@shopease.example</p>
+        <p>Phone: 00000 00000</p>
+    </section>
+
+    <footer><p>© 2026 ShopEase</p></footer>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <button id="cartClose" type="button">Close</button>
+            <h2>Your Cart</h2>
+            <div id="cartItems"></div>
+            <h3>Total: <span id="cartTotal">₹0</span></h3>
+            <button id="clear-cart" type="button">Clear Cart</button>
+        </div>
+    </div>
+    <div id="detailsModal" class="modal">
+        <div class="modal-content" id="detailsContent">
+            <button id="detailsClose" type="button">Close</button>
+            <h2 id="detailsName"></h2>
+            <p id="detailsDescription"></p>
+        </div>
+    </div>
+    <button id="backToTop" type="button">Back to Top ↑</button>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

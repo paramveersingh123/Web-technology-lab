@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ShopEase - About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>About ShopEase</h1>
+        <p>Shopping made simple</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <button id="themeToggle" type="button">Dark Mode</button>
+        <button id="cartOpen" type="button">Cart (<span id="cart-count">0</span>)</button>
+    </nav>
+
+    <section>
+        <h2>Who We Are</h2>
+        <p>ShopEase is a sample online shopping website made to help customers explore products easily.</p>
+
+        <h2>Our Mission</h2>
+        <p>Our mission is to make online shopping simple and convenient for everyone.</p>
+
+        <h2>Our Vision</h2>
+        <p>Our vision is to offer a simple and enjoyable shopping experience.</p>
+
+        <h2>What We Offer</h2>
+        <p>We offer sample electronics, clothing and accessories. Our website helps visitors browse products and learn about their prices.</p>
+    </section>
+
+    <footer><p>© 2026 ShopEase</p></footer>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <button id="cartClose" type="button">Close</button>
+            <h2>Your Cart</h2>
+            <div id="cartItems"></div>
+            <h3>Total: <span id="cartTotal">₹0</span></h3>
+            <button id="clear-cart" type="button">Clear Cart</button>
+        </div>
+    </div>
+    <div id="detailsModal" class="modal">
+        <div class="modal-content" id="detailsContent">
+            <button id="detailsClose" type="button">Close</button>
+            <h2 id="detailsName"></h2>
+            <p id="detailsDescription"></p>
+        </div>
+    </div>
+    <button id="backToTop" type="button">Back to Top ↑</button>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

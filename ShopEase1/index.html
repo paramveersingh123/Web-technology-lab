@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ShopEase - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ShopEase</h1>
+        <p>Everything you need, in one place!</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <button id="themeToggle" type="button">Dark Mode</button>
+        <button id="cartOpen" type="button">Cart (<span id="cart-count">0</span>)</button>
+    </nav>
+
+    <section class="banner">
+        <h2>Welcome to ShopEase</h2>
+        <p>Find great products at great prices.</p>
+        <a class="button" href="products.html">Shop Now</a>
+    </section>
+
+
+    <section>
+        <h2>ShopEase Image Slider</h2>
+        <div class="slider">
+            <img class="slide" src="images/image4.jpg" alt="Headphones">
+            <img class="slide" src="images/image5.jpg" alt="Watch">
+            <img class="slide" src="images/image1.avif" alt="Shoes">
+        </div>
+        <button id="prevSlide" type="button">Previous</button>
+        <button id="nextSlide" type="button">Next</button>
+    </section>
+
+    <section>
+        <h2>Featured Products</h2>
+        <div class="products">
+            <div class="product product-card" data-category="Electronics" data-name="Headphones" data-price="1499" data-description="Comfortable headphones for everyday use.">
+                <img src="images/image4.jpg" alt="Headphones">
+                <h3>Headphones</h3>
+                <p>Price: ₹1,499</p>
+                <button class="details" type="button">View Details</button>
+                <button class="add-cart" data-name="Headphones" data-price="1499" type="button">Add to Cart</button>
+                <button class="wishlist" data-name="Headphones" type="button">♡ Wishlist</button>
+            </div>
+
+            <div class="product product-card" data-category="Accessories" data-name="Watch" data-price="999" data-description="A simple everyday watch.">
+                <img src="images/image5.jpg" alt="Watch">
+                <h3>Watch</h3>
+                <p>Price: ₹999</p>
+                <button class="details" type="button">View Details</button>
+                <button class="add-cart" data-name="Watch" data-price="999" type="button">Add to Cart</button>
+                <button class="wishlist" data-name="Watch" type="button">♡ Wishlist</button>
+            </div>
+
+            <div class="product product-card" data-category="Clothing" data-name="Shoes" data-price="2499" data-description="Everyday casual shoes.">
+                <img src="images/image1.avif" alt="Shoes">
+                <h3>Shoes</h3>
+                <p>Price: ₹2,499</p>
+                <button class="details" type="button">View Details</button>
+                <button class="add-cart" data-name="Shoes" data-price="2499" type="button">Add to Cart</button>
+                <button class="wishlist" data-name="Shoes" type="button">♡ Wishlist</button>
+            </div>
+
+            <div class="product product-card" data-category="Electronics" data-name="Earphones" data-price="799" data-description="Small and easy to carry.">
+                <img src="images/image3.jpg" alt="Earphones">
+                <h3>Earphones</h3>
+                <p>Price: ₹799</p>
+                <button class="details" type="button">View Details</button>
+                <button class="add-cart" data-name="Earphones" data-price="799" type="button">Add to Cart</button>
+                <button class="wishlist" data-name="Earphones" type="button">♡ Wishlist</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Shop by Category</h2>
+        <div class="categories">
+            <button class="home-filter" data-category="Electronics" type="button">Electronics</button>
+            <button class="home-filter" data-category="Clothing" type="button">Clothing</button>
+            <button class="home-filter" data-category="Accessories" type="button">Accessories</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 ShopEase | Follow us on Instagram and Facebook</p>
+    </footer>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <button id="cartClose" type="button">Close</button>
+            <h2>Your Cart</h2>
+            <div id="cartItems"></div>
+            <h3>Total: <span id="cartTotal">₹0</span></h3>
+            <button id="clear-cart" type="button">Clear Cart</button>
+        </div>
+    </div>
+    <div id="detailsModal" class="modal">
+        <div class="modal-content" id="detailsContent">
+            <button id="detailsClose" type="button">Close</button>
+            <h2 id="detailsName"></h2>
+            <p id="detailsDescription"></p>
+        </div>
+    </div>
+    <button id="backToTop" type="button">Back to Top ↑</button>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
