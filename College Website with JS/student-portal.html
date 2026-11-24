@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Portal - GCET Jammu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="college-header">
+            <img src="images/logo.jpg" alt="GCET Jammu Logo">
+            <div class="college-text">
+                <h1>GCET JAMMU</h1>
+                <p>Education | Knowledge | Success</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <a href="student-portal.html">Student Portal</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="#" class="logout-button" id="logoutButton">Logout</a>
+    </nav>
+
+    <main class="dashboard">
+        <h2>Student Portal</h2>
+        <p class="welcome">Welcome, <b id="welcomeName"></b>!</p>
+
+        <section class="student-card">
+            <h3>Student Information</h3>
+            <p><b>Name:</b> <span id="portalName"></span></p>
+            <p><b>Roll Number:</b> <span id="portalRoll"></span></p>
+            <p><b>Branch:</b> <span id="portalBranch"></span></p>
+            <p><b>Semester:</b> <span id="portalSemester"></span></p>
+            <button type="button" id="logoutBtn" class="button">Logout</button>
+        </section>
+
+        <section class="student-card">
+            <h3>Student Marks Calculator</h3>
+            <p>Enter marks for five subjects (0 to 100):</p>
+            <div class="marks-inputs">
+                <label>Subject 1 <input type="number" id="mark1" min="0" max="100"></label>
+                <label>Subject 2 <input type="number" id="mark2" min="0" max="100"></label>
+                <label>Subject 3 <input type="number" id="mark3" min="0" max="100"></label>
+                <label>Subject 4 <input type="number" id="mark4" min="0" max="100"></label>
+                <label>Subject 5 <input type="number" id="mark5" min="0" max="100"></label>
+            </div>
+            <button type="button" id="calculateBtn" class="button">Calculate Result</button>
+            <p id="marksResult" class="form-message"></p>
+        </section>
+    </main>
+
+    <footer>© 2025 GCET JAMMU. All Rights Reserved.</footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
